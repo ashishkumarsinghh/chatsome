@@ -1,0 +1,22 @@
+
+#chatarea{
+  height:400px;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  border: solid rgba(0,0,0,0.2) 1px;
+}
+
+.messages{
+  padding-bottom: 30px;
+
+}
+.myheader{
+  background: black;
+  color: white;
+  text-align: center;
+}
+.myheader >h1{
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+}
