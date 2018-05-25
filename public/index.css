@@ -1,9 +1,14 @@
-
+body{
+  background: #324D5C;
+}
 #chatarea{
   height:400px;
   overflow-y: scroll;
   padding-bottom: 30px;
-  border: solid rgba(0,0,0,0.2) 1px;
+  border: solid white 4px;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
 }
 
 .messages{
@@ -11,15 +16,17 @@
 
 }
 .myheader{
-  background: black;
-  color: white;
   text-align: center;
 }
 .myheader >h1{
   padding-top: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 32px;
+  color : white;
+  font-weight: bolder;
 }
 .inputmsg{
-  border: solid rgba(0,0,0,0.2) 1px;
+  margin-top: 20px;
+  border: solid white 4px;
+  border-radius: 20px;
 }
