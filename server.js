@@ -8,6 +8,7 @@ app.use(express.static('public'))
 app.get('/',(req, res) => res.sendFile(path.resolve('./index.html')))
 
 io.on('connection', function(socket){
+
   socket.on("join", function(username){
     socket.username = username;
     io.emit("join", socket.username);

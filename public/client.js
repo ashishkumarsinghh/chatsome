@@ -31,6 +31,7 @@ socket.on("join", function(username){
   notif_header.appendChild(document.createTextNode(username + " has just joined."));
   notif.appendChild(notif_header);
   document.getElementById("messages").appendChild(notif);
+  $('#chatarea').animate({scrollTop: $('#chatarea').prop("scrollHeight")}, 500);
 });
 
 socket.on("warning", function(warning_msg){
@@ -43,7 +44,10 @@ socket.on("warning", function(warning_msg){
   wtext_header.appendChild(document.createTextNode(warning_msg));
   wtext.appendChild(wtext_header);
   document.getElementById("messages").appendChild(wtext);
+  $('#chatarea').animate({scrollTop: $('#chatarea').prop("scrollHeight")}, 500);
 });
+
+
 socket.on("message", function(msg){
 
   let dtext = document.createElement("DIV");
@@ -61,4 +65,6 @@ socket.on("message", function(msg){
   dtext.appendChild(dtext_header);
   dtext.appendChild(ptext);
   document.getElementById("messages").appendChild(dtext);
+  $('#chatarea').animate({scrollTop: $('#chatarea').prop("scrollHeight")}, 500);
+
 });
